@@ -5,137 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Djuice</title>
     <link rel="shortcut icon" href="images/Juice.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-     <header>
-        <h1><b>Form Pemesanan Juice</b></h1>
-        <p><i>For Your Healthy Choice!! </i></p>
-
-        <nav>
-            <a href="#menu">lihat menu</a> |
-            <a href="#order">Pesan sekarang</a> |
-            <a href="#contact">Kontak kami</a> |
-        </nav>
-        <hr>
-    </header>
-
-    <!-- Section: Promo -->
-     <section id="promo">
-        <h3>Promo hari ini!!!</h3>
-        <img src="images/promo.jpg" alt="Promo image" width="500px">
-        <p><mark>Diskon 40%</mark> <i>untuk seluruh pembeli signature juice</i></p>
+    <div class="container"> 
         
-
-        <ul>
-            <li>Tanpa air dan gula</li>
-            <li>Manis rasanya</li>
-            <li>Harganya ramah di kantong 😁</li>
-
-        </ul>
-    </section>
-
+        <!-- Header -->
+         <header>
+            <h1 class="judul"><b>Form Pemesanan Juice</b></h1>
+            <p><i>For Your Healthy Choice!! </i></p>
     
-    <!-- Section: menu -->
-     <section id="menu">
-        <h2> Varian Juice</h2>
-        <table border="1">
-            <tr>
-                <th>Nama</th>
-                <th>Kandungan</th>
-                <th>Harga</th>
-            </tr>
-            <tr>
-                <td>Freshly yellow</td>
-                <td>Nanas, Lemon, Mint</td>
-                <td>Rp. 25.000</td>
-            </tr>
-            <tr>
-                <td>C-boost</td>
-                <td>Nanas, jeruk, wortel</td>
-                <td>Rp. 25.000</td>
-            </tr>
-            <tr>
-                <td>Pome Glow</td>
-                <td>Apel, Delima</td>
-                <td>Rp. 25.000</td>
-            </tr>
-            <tr>
-                <td>Tropical zest</td>
-                <td>Nanas, Lemon, Sereh</td>
-                <td>Rp. 25.000</td>
-            </tr>
-            <tr>
-                <td>Super Kale</td>
-                <td>Nanas, Jeruk, Kale</td>
-                <td>Rp. 25.000</td>
-            </tr>
-        </table>
-     </section>
-
-     <!-- Section: Order Form -->
-     <section id="order">
-        <h3>Pesan Disini:</h3>
-        <form action="https://formspree.io/f/xbgrrvgy" method="POST">
-            <label for="pembeli">Nama anda:</label><br>
-            <input type="text" id="pembeli" name="pembeli"><br><br>
-
-            <label for="email">Email anda:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-
-            <label for="ukuran"><b>Ukuran botol:</b></label><br>
-            <select id="ukuran" name="ukuran">
-                <option value="">Choose size</option>
-                <option value="small">100ml</option>
-                <option value="medium">300ml</option>
-                <option value="large">500ml</option>
-            </select><br><br>
-
-            <label for="varian"><b>Pilih Jenis Varian</b></label>
-            <br><input type="radio" name="varian" value="Freshly Yellow"> Freshly Yellow
-            <br><input type="radio" name="varian" value="C-boost"> C-Boost
-            <br><input type="radio" name="varian" value="Pome Glow"> Pome Glow
-            <br><input type="radio" name="varian" value="Super Kale"> Super Kale
-            <br><input type="radio" name="varian" value="Tropical Zest"> Tropical Zest<br><br>
+            <nav>
+                <a href="#menu">lihat menu</a> |
+                <a href="#order">Pesan sekarang</a> |
+                <a href="#contact">Kontak kami</a> 
+            </nav>
+            <hr>
+        </header>
+    
+        <!-- Section: Promo -->
+         <section id="promo">
+            <h3 class="judul">Promo hari ini!!!</h3>
+            <img src="images/promo.jpg" alt="Promo image" width="250px">
+            <p><mark>Buy one get one</mark> for free</p> 
             
-            
-            <label for="botol"><b>Pilih jenis botol</b></label>
-            <br><input type="radio" name="botol" value="Bulat"> Bulat
-            <br><input type="radio" name="botol" value="Kotak"> Kotak
-            <br><input type="radio" name="botol" value="Segitiga"> Segitiga
-            <br><input type="radio" name="botol" value="Persegipanjang"> Persegipanjang<br><br>
+    
+            <ul>
+                <li>Tanpa air dan gula</li>
+                <li>Manis rasanya</li>
+                <li>Harganya ramah di kantong 😁</li>
+    
+            </ul>
+        </section>
+    
+        
+        <!-- Section: menu -->
+         <section id="menu">
+            <h2 class="judul"> Varian Juice</h2>
+            <table border="1">
+                <tr>
+                    <th class="judul">Nama</th>
+                    <th class="judul">Kandungan</th>
+                    <th class="judul">Harga</th>
+                </tr>
+                <tr>
+                    <td>Freshly yellow</td>
+                    <td>Nanas, Lemon, Mint</td>
+                    <td>Rp. 25.000</td>
+                </tr>
+                <tr>
+                    <td>C-boost</td>
+                    <td>Nanas, jeruk, wortel</td>
+                    <td>Rp. 25.000</td>
+                </tr>
+                <tr>
+                    <td>Pome Glow</td>
+                    <td>Apel, Delima</td>
+                    <td>Rp. 25.000</td>
+                </tr>
+                <tr>
+                    <td>Tropical zest</td>
+                    <td>Nanas, Lemon, Sereh</td>
+                    <td>Rp. 25.000</td>
+                </tr>
+                <tr>
+                    <td>Super Kale</td>
+                    <td>Nanas, Jeruk, Kale</td>
+                    <td>Rp. 25.000</td>
+                </tr>
+            </table>
+         </section>
+    
+         <!-- Section: Order Form -->
+         <section id="order">
+            <h3 class="judul">Pesan Disini:</h3>
+            <form action="https://formspree.io/f/xbgrrvgy" method="POST">
+                <label for="pembeli"><b>Nama anda</b>:</label><br>
+                <input type="text" id="pembeli" name="pembeli"><br><br>
+    
+                <label for="email"><b>Email anda</b>:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+    
+                <label for="ukuran"><b>Ukuran botol:</b></label><br>
+                <select id="ukuran" name="ukuran">
+                    <option value="">Choose size</option>
+                    <option value="small">100ml</option>
+                    <option value="medium">300ml</option>
+                    <option value="large">500ml</option>
+                </select><br><br>
+    
+                <label for="varian"><b>Pilih Jenis Varian</b></label>
+                <br><input type="radio" name="varian" value="Freshly Yellow"> Freshly Yellow
+                <br><input type="radio" name="varian" value="C-boost"> C-Boost
+                <br><input type="radio" name="varian" value="Pome Glow"> Pome Glow
+                <br><input type="radio" name="varian" value="Super Kale"> Super Kale
+                <br><input type="radio" name="varian" value="Tropical Zest"> Tropical Zest<br><br>
+                
+                
+                <label for="botol"><b>Pilih jenis botol</b></label>
+                <br><input type="radio" name="botol" value="Bulat"> Bulat
+                <br><input type="radio" name="botol" value="Kotak"> Kotak
+                <br><input type="radio" name="botol" value="Segitiga"> Segitiga
+                <br><input type="radio" name="botol" value="Persegipanjang"> Persegipanjang<br><br>
+    
+    
+                <label for="toping"><b>Pilih Toping</b></label>
+                <br><input type="checkbox" id='toping' Name="toping" value="Chia Seed">Chia Seed
+                <br><input type="checkbox" id="toping" Name="toping" value="Jelly"> Jelly
+                <br><input type="checkbox" id="toping" Name="toping" value="Lemon slice"> Lemon slice
+                <br><input type="checkbox" id="toping" Name="toping" value="Berry mix"> Berry mix
+                <br><input type="checkbox" id="toping" Name="toping" value="Chocolate chips"> Chocolate chips<br><br>
+    
+                <label for="catatan">Catatan:</label>
+                <br><textarea name="catatan" id="catatan" rows="5"></textarea>
+                
+    
+                <br><br><button type="submit"><b>Kirim Pesanan</b></button>
+            </form>
+         </section>
+    
+         <!-- Section: Contact -->
+          <section id='contact'>
+            <h3 class="judul">Kontak Kami</h3>
+            <p>📍 Gg. Mawar Jl. Al-jauhari, Kec. Kalisari, Jakarta Timur</p>
+            <p>📞 <a target="_blank" href="https://wa.me/6285385457740?text=Halo%20Saya%20Mau%20Pesan%20Juice" >+62 853-8545-7740</a> </p>
+            <p>✉️ <a target="_blank" href="mailto:lalualby11@gmail.com">lalualby11@gmail.com</a></p>
+    
+          </section>
+    
+          <!-- Section: Footer -->
+          <footer>
+            <hr>
+                <p> &copy; Djuice 2026. Reserved. All Rights Reserved</p>
+            </footer>
 
-
-            <label for="toping"><b>Pilih Toping</b></label>
-            <br><input type="checkbox" id='toping' Name="toping" value="Chia Seed">Chia Seed
-            <br><input type="checkbox" id="toping" Name="toping" value="Jelly"> Jelly
-            <br><input type="checkbox" id="toping" Name="toping" value="Lemon slice"> Lemon slice
-            <br><input type="checkbox" id="toping" Name="toping" value="Berry mix"> Berry mix
-            <br><input type="checkbox" id="toping" Name="toping" value="Chocolate chips"> Chocolate chips<br><br>
-
-            <label for="catatan">Catatan:</label>
-            <br><textarea name="catatan" id="catatan" cols="45" rows="5"></textarea>
-            
-
-            <br><br><button type="submit"><b>Kirim Pesanan</b></button>
-        </form>
-     </section>
-
-     <!-- Section: Contact -->
-      <section id='contact'>
-        <h3>Kontak Kami</h3>
-        <p>📍 Gg. Mawar Jl. Al-jauhari, Kec. Kalisari, Jakarta Timur</p>
-        <p>📞 <a target="_blank" href="https://wa.me/6285385457740?text=Halo%20Saya%20Mau%20Pesan%20Juice" >+62 853-8545-7740</a> </p>
-        <p>✉️ <a target="_blank" href="mailto:lalualby11@gmail.com">lalualby11@gmail.com</a></p>
-
-      </section>
-
-      <!-- Section: Footer -->
-      <footer>
-        <hr>
-            <p> &copy; Djuice 2026. Reserved. All Rights Reserved</p>
-        </footer>
+    </div>
+    
     
     </body>
 </html>
