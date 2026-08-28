@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color:#92EEFF;
+    background-color:#E6EEC9;
     color:#2C2C2C;
     line-height: 1.6;
     }
@@ -25,7 +25,7 @@ body {
 
 /* header style*/
 header {
-    background-color:#D8FFC5;
+    background-color:#7DA78C;
     color:#2C2C2C;
     font-size: 12px;
     padding: 20px auto;
@@ -81,6 +81,7 @@ th{
 
 /* form style */
 form{
+    background-color: #C2D099;
     border: 3px solid #5E3122;
     border-radius: 15px;
     padding: 20px;
@@ -92,6 +93,7 @@ select{
     width: 100%;
     padding: 5px 0px;
     margin-top: 5px;
+    border-radius: 5px;
 }
 
 form input [type="checkbox"],
@@ -124,8 +126,15 @@ button:hover {
     color: #2C2C2C; 
 }
 
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus {
+    border: 2px solid #5E3122;
+    outline: none;
+}
+
 /* Contact Style */
-#contact p{
+#contact {
    border: 2px solid #5E3122;
    padding: 10px;
    border-radius: 15px;
@@ -147,8 +156,8 @@ button:hover {
 
 /* Footer */
 footer{
-    background-color: #D8FFC5;
-    color:#2C2C2C;
-    padding: 10px;
-    margin: 10 auto;   
+    background-color: #7DA78C;
+    color:#2C2C2C; 
+    margin: 20 auto; 
+    padding: 10px auto;
 }
